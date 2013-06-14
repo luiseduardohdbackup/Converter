@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ConverterViewController.h
 //  Converter
 //
 //  Created by Oliver Foggin on 14/06/2013.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ConverterViewController : UIViewController
 
 @end
