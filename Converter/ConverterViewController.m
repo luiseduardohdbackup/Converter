@@ -37,7 +37,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
+     
     self.converter = [[Converter alloc] initWithConverterName:@"Celsius to Farenheit"
                                                      fromName:@"Celsius"
                                                        toName:@"Fahrenheit"
