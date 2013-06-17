@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6443C46176FC91D000C746D /* EditConverterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6443C45176FC91D000C746D /* EditConverterViewController.m */; };
 		F6EA01BD176BBBCB006BB87A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EA01BC176BBBCB006BB87A /* UIKit.framework */; };
 		F6EA01BF176BBBCB006BB87A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EA01BE176BBBCB006BB87A /* Foundation.framework */; };
 		F6EA01C1176BBBCB006BB87A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EA01C0176BBBCB006BB87A /* CoreGraphics.framework */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6443C44176FC91D000C746D /* EditConverterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditConverterViewController.h; sourceTree = "<group>"; };
+		F6443C45176FC91D000C746D /* EditConverterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditConverterViewController.m; sourceTree = "<group>"; };
 		F6EA01B9176BBBCB006BB87A /* Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Converter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EA01BC176BBBCB006BB87A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F6EA01BE176BBBCB006BB87A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,6 +102,8 @@
 				F6EA01E3176BBC31006BB87A /* Converter.m */,
 				F6EA01E5176BC5A8006BB87A /* ConverterPickerViewController.h */,
 				F6EA01E6176BC5A8006BB87A /* ConverterPickerViewController.m */,
+				F6443C44176FC91D000C746D /* EditConverterViewController.h */,
+				F6443C45176FC91D000C746D /* EditConverterViewController.m */,
 			);
 			path = Converter;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 				F6EA01E1176BBC06006BB87A /* ConverterViewController.m in Sources */,
 				F6EA01E4176BBC31006BB87A /* Converter.m in Sources */,
 				F6EA01E7176BC5A8006BB87A /* ConverterPickerViewController.m in Sources */,
+				F6443C46176FC91D000C746D /* EditConverterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +316,7 @@
 				F6EA01DE176BBBCB006BB87A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

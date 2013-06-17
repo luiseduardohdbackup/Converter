@@ -13,11 +13,14 @@
 @property (nonatomic, strong) NSString *converterName;
 @property (nonatomic, strong) NSString *fromName;
 @property (nonatomic, strong) NSString *toName;
+@property (nonatomic, strong) NSNumber *multiple;
+@property (nonatomic, strong) NSNumber *constant;
 
 - (id)initWithConverterName:(NSString *)converterName
                    fromName:(NSString *)fromName
                      toName:(NSString *)toName
-            conversionBlock:(float (^)(float))conversionBlock;
+                   multiple:(NSNumber *)multiple
+                   constant:(NSNumber *)constant;
 
 - (float)convert:(float)value;
 

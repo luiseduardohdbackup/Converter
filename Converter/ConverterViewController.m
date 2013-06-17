@@ -41,9 +41,8 @@
     self.converter = [[Converter alloc] initWithConverterName:@"Celsius to Farenheit"
                                                      fromName:@"Celsius"
                                                        toName:@"Fahrenheit"
-                                              conversionBlock:^float(float input) {
-                                                  return input * 9 / 5 + 32;
-                                              }];
+                                                     multiple:@(9.0 / 5.0)
+                                                     constant:@32.0];
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,7 +68,7 @@
     
     float result = [self.converter convert:input];
     
-    self.convertedValueLabel.text = [NSString stringWithFormat:@"%f", result];
+    self.convertedValueLabel.text = [NSString stringWithFormat:@"%.2f", result];
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField

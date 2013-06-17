@@ -8,32 +8,50 @@
 
 #import "Converter.h"
 
-@interface Converter ()
-
-@property (nonatomic, copy) float (^conversionBlock)(float inputValue);
-
-@end
-
 @implementation Converter
 
 - (id)initWithConverterName:(NSString *)converterName
                    fromName:(NSString *)fromName
                      toName:(NSString *)toName
-            conversionBlock:(float (^)(float))conversionBlock
+                   multiple:(NSNumber *)multiple
+                   constant:(NSNumber *)constant
 {
     self = [super init];
     if (self) {
         self.converterName = converterName;
         self.fromName = fromName;
         self.toName = toName;
-        self.conversionBlock = conversionBlock;
+        self.multiple = multiple;
+        self.constant = constant;
     }
     return self;
 }
 
 - (float)convert:(float)value
 {
-    return self.conversionBlock(value);
+    return value * [self.multiple floatValue] + [self.constant floatValue];
+}
+
+- (void)encodeWithCoder:(NSCoder *)encoder {
+    //Encode properties, other class variables, etc
+    [encoder encodeObject:self.converterName forKey:@"converterName"];
+    [encoder encodeObject:self.fromName forKey:@"fromName"];
+    [encoder encodeObject:self.toName forKey:@"toName"];
+    [encoder encodeObject:self.multiple forKey:@"multiple"];
+    [encoder encodeObject:self.constant forKey:@"constant"];
+}
+
+- (id)initWithCoder:(NSCoder *)decoder {
+    self = [super init];
+    if(self) {
+        //decode properties, other class vars
+        self.converterName = [decoder decodeObjectForKey:@"converterName"];
+        self.fromName = [decoder decodeObjectForKey:@"fromName"];
+        self.toName = [decoder decodeObjectForKey:@"toName"];
+        self.multiple = [decoder decodeObjectForKey:@"multiple"];
+        self.constant = [decoder decodeObjectForKey:@"constant"];
+    }
+    return self;
 }
 
 @end
