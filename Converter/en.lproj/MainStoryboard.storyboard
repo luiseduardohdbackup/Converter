@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="705" y="31"/>
+            <point key="canvasLocation" x="1187" y="-1"/>
         </scene>
         <!--Converter Picker View Controller - Select Converter-->
         <scene sceneID="xda-Ow-kO2">
@@ -133,7 +133,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpd-9f-q3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1208" y="31"/>
+            <point key="canvasLocation" x="1690" y="-1"/>
         </scene>
         <!--Edit Converter View Controller-->
         <scene sceneID="1fJ-P5-LKd">
@@ -219,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Wh-hn-hgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1708" y="31"/>
+            <point key="canvasLocation" x="2190" y="-1"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qo9-Ow-6XZ">
@@ -237,7 +237,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jFv-MV-Qsv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="179" y="31"/>
+            <point key="canvasLocation" x="661" y="-1"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -246,6 +246,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Vrc-EZ-Qg4"/>
+        <segue reference="eoF-Xc-OiV"/>
     </inferredMetricsTieBreakers>
 </document>
